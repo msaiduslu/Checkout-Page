@@ -28,7 +28,7 @@ function price(e) {
   let productTotal = e.target
     .closest(".product-information")
     .querySelector("#product-total");
-  productTotal.innerText = amount * totalPrice;
+  productTotal.innerText = (amount * totalPrice).toFixed(2);
 }
 
 function payment(e) {
@@ -55,6 +55,7 @@ function payment(e) {
 
 function itemRemove(e) {
   const item = e.target.closest(".item");
+  item.querySelector("#product-total").innerText = 0;
   item.remove();
 }
 
@@ -69,5 +70,6 @@ productContainer.addEventListener("click", (e) => {
     payment(e);
   } else if (e.target.id == "btn-remove") {
     itemRemove(e);
+    payment(e);
   }
 });

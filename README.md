@@ -1,4 +1,4 @@
-![Project Snapshot](screengif.gif)
+![Project Snapshot]()
 
 [👉 click here to view the page](https://msaiduslu.github.io/Checkout-Page/)
 

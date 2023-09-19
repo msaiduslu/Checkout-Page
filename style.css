@@ -67,13 +67,14 @@ form select{
   display:flex;
   justify-content: center;
   gap: 5rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
   
 }
 
 .product-container{
   width: 30vw;
   min-width: 300px;
+  max-width: 400px;
   height: 100%;
   background-color: rgb(122, 122, 158, 0.4);
   border-radius: 20px;
